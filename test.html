@@ -1,0 +1,689 @@
+//changes
+<script id="action_insert_16921761696093642">
+
+    let insertSlider = function (params) {
+        if ((_satellite.getVar('user.segment.has_paid_access:sd')) == false) {
+
+document.querySelectorAll(`[data-area="block>topic:das_beste_von_spiegel+"]`)[0].style.display = "none";
+document.querySelectorAll(`[data-area="block>topic:das_beste_von_spiegel+"]`)[1].style.display = "none";
+
+//freie Nutzer:innen mit querySelectorAll('[data-area="block>topic:das_beste_von_spiegel+"]')[1]
+//
+if (document.querySelectorAll('[data-area="block>topic:das_beste_von_spiegel+"]')[0].getElementsByTagName('article')[0].getAttribute('data-target-teaser') == 'xxl-opinion') {
+    var title1 = document.querySelectorAll('[data-area="block>topic:das_beste_von_spiegel+"]')[0].getElementsByTagName('article')[0].getElementsByTagName('header')[0].getElementsByTagName('span')[6].innerText;
+    var url1 = document.querySelectorAll('[data-area="block>topic:das_beste_von_spiegel+"]')[0].getElementsByTagName('article')[0].getElementsByTagName('a')[0].href;
+    var readtime1 = document.querySelectorAll('[data-area="block>topic:das_beste_von_spiegel+"]')[0].getElementsByTagName('article')[0].getElementsByTagName('div')[4].getElementsByTagName('span')[3].innerText;
+
+    var imgnoscriptsrc1 = document.querySelectorAll('[data-area="block>topic:das_beste_von_spiegel+"]')[0].getElementsByTagName('article')[0].getElementsByTagName('noscript')[1].innerText;
+    var imgnoscriptid1 = imgnoscriptsrc1.slice(103, 139);
+
+    var tempDiv1 = document.createElement('div');
+    tempDiv1.innerHTML = imgnoscriptsrc1;
+    var titleElement1 = tempDiv1.querySelector('img[title]');
+    var titleContent1 = titleElement1.getAttribute('title');
+
+    var imgsrcsetmobile1 = `https://cdn.prod.www.spiegel.de/assets/image/` + imgnoscriptid1 + `_w640_r0.75.jpg`;
+    var imgsrcmobile1 = imgsrcsetmobile1;
+    var imgsrcset1 = `https://cdn.prod.www.spiegel.de/assets/image/` + imgnoscriptid1 + `_w1240_r1.778.jpg`;
+    var imgsrc1 = imgsrcset1;
+
+} else {
+    var title1 = document.querySelectorAll('[data-area="block>topic:das_beste_von_spiegel+"]')[0].getElementsByTagName('article')[0].getElementsByTagName('header')[0].getElementsByTagName('span')[4].innerText;
+    var url1 = document.querySelectorAll('[data-area="block>topic:das_beste_von_spiegel+"]')[0].getElementsByTagName('article')[0].getElementsByTagName('a')[0].href;
+    var readtime1 = document.querySelectorAll('[data-area="block>topic:das_beste_von_spiegel+"]')[0].getElementsByTagName('article')[0].getElementsByTagName('div')[3].getElementsByTagName('span')[3].innerText;
+
+    var imgnoscriptsrc1 = document.querySelectorAll('[data-area="block>topic:das_beste_von_spiegel+"]')[0].getElementsByTagName('article')[0].getElementsByTagName('noscript')[0].innerText;
+    var imgnoscriptid1 = imgnoscriptsrc1.slice(103, 139)
+
+    var tempDiv1 = document.createElement('div');
+    tempDiv1.innerHTML = imgnoscriptsrc1;
+    var titleElement1 = tempDiv1.querySelector('img[title]');
+    var titleContent1 = titleElement1.getAttribute('title');
+
+    var imgsrcsetmobile1 = `https://cdn.prod.www.spiegel.de/assets/image/` + imgnoscriptid1 + `_w640_r0.75.jpg`;
+    var imgsrcmobile1 = imgsrcsetmobile1;
+    var imgsrcset1 = `https://cdn.prod.www.spiegel.de/assets/image/` + imgnoscriptid1 + `_w1240_r1.778.jpg`;
+    var imgsrc1 = imgsrcset1;
+}
+
+
+
+//Position 2
+if (document.querySelectorAll('[data-area="block>topic:das_beste_von_spiegel+"]')[0].getElementsByTagName('article')[1].getAttribute('data-target-teaser') == 'm-opinion') {
+    var title2 = document.querySelectorAll('[data-area="block>topic:das_beste_von_spiegel+"]')[0].getElementsByTagName('article')[1].getElementsByTagName('span')[6].innerText;
+    var subtitle2 = (document.querySelectorAll('[data-area="block>topic:das_beste_von_spiegel+"]')[0]?.getElementsByTagName('article')[1]?.getElementsByTagName('header')[0]?.getElementsByTagName('h2')[0]?.getElementsByTagName('span')[2]?.innerText || '').trim();
+    var headline2 = subtitle2 + ": " + title2
+    var url2 = document.querySelectorAll('[data-area="block>topic:das_beste_von_spiegel+"]')[0].getElementsByTagName('article')[1].getElementsByTagName('a')[0].href;
+
+    var readtime2 = document.querySelectorAll('[data-area="block>topic:das_beste_von_spiegel+"]')[0].getElementsByTagName('article')[1].getElementsByTagName('div')[3].getElementsByTagName('span')[3].innerText;
+
+    var imgnoscriptsrc2 = document.querySelectorAll('[data-area="block>topic:das_beste_von_spiegel+"]')[0].getElementsByTagName('article')[1].getElementsByTagName('noscript')[0].innerText;
+    var imgnoscriptid2 = imgnoscriptsrc2.slice(83, 119)
+
+    var tempDiv2 = document.createElement('div');
+    tempDiv2.innerHTML = imgnoscriptsrc2;
+    var titleElement2 = tempDiv2.querySelector('img[title]');
+    var titleContent2 = titleElement2.getAttribute('title');
+
+    var imgsrcsetmobile2 = `https://cdn.prod.www.spiegel.de/assets/image/` + imgnoscriptid2 + `_w640_r0.75.jpg`;
+    var imgsrcmobile2 = imgsrcsetmobile2;
+    var imgsrcset2 = `https://cdn.prod.www.spiegel.de/assets/image/` + imgnoscriptid2 + `_w1240_r1.778.jpg`;
+    var imgsrc2 = imgsrcset2;
+
+} else {
+    var title2 = document.querySelectorAll('[data-area="block>topic:das_beste_von_spiegel+"]')[0].getElementsByTagName('article')[1].getElementsByTagName('header')[0].getElementsByTagName('h2')[0].getElementsByTagName('span')[0].getElementsByTagName('a')[0].getElementsByTagName('span')[0].getElementsByTagName('span')[1].innerText;
+    var subtitle2 = (document.querySelectorAll('[data-area="block>topic:das_beste_von_spiegel+"]')[0].getElementsByTagName('article')[1].getElementsByTagName('header')[0].getElementsByTagName('h2')[0].getElementsByTagName('span')[2].innerText || '').trim();
+    var headline2 = subtitle2 + ": " + title2
+    var url2 = document.querySelectorAll('[data-area="block>topic:das_beste_von_spiegel+"]')[0].getElementsByTagName('article')[1].getElementsByTagName('a')[0].href;
+
+    var readtime2 = document.querySelectorAll('[data-area="block>topic:das_beste_von_spiegel+"]')[0].getElementsByTagName('article')[1].getElementsByTagName('div')[3].getElementsByTagName('span')[3].innerText;
+
+    var imgnoscriptsrc2 = document.querySelectorAll('[data-area="block>topic:das_beste_von_spiegel+"]')[0].getElementsByTagName('article')[1].getElementsByTagName('noscript')[0].innerText;
+    var imgnoscriptid2 = imgnoscriptsrc2.slice(83, 119)
+
+    var tempDiv2 = document.createElement('div');
+    tempDiv2.innerHTML = imgnoscriptsrc2;
+    var titleElement2 = tempDiv2.querySelector('img[title]');
+    var titleContent2 = titleElement2.getAttribute('title');
+
+    var imgsrcsetmobile2 = `https://cdn.prod.www.spiegel.de/assets/image/` + imgnoscriptid2 + `_w640_r0.75.jpg`;
+    var imgsrcmobile2 = imgsrcsetmobile2;
+    var imgsrcset2 = `https://cdn.prod.www.spiegel.de/assets/image/` + imgnoscriptid2 + `_w1240_r1.778.jpg`;
+    var imgsrc2 = imgsrcset2;
+}
+
+//Position 3
+
+if (document.querySelectorAll('[data-area="block>topic:das_beste_von_spiegel+"]')[0].getElementsByTagName('article')[2].getAttribute('data-target-teaser') == 'm-opinion') {
+    var title3 = document.querySelectorAll('[data-area="block>topic:das_beste_von_spiegel+"]')[0].getElementsByTagName('article')[2].getElementsByTagName('header')[0].getElementsByTagName('h2')[0].getElementsByTagName('span')[0].getElementsByTagName('a')[0].getElementsByTagName('span')[0].getElementsByTagName('span')[1].innerText;
+    var subtitle3 = (document.querySelectorAll('[data-area="block>topic:das_beste_von_spiegel+"]')[0].getElementsByTagName('article')[2].getElementsByTagName('header')[0].getElementsByTagName('h2')[0].getElementsByTagName('span')[2].innerText || '').trim();
+    var headline3 = subtitle3 + ": " + title3
+    var url3 = document.querySelectorAll('[data-area="block>topic:das_beste_von_spiegel+"]')[0].getElementsByTagName('article')[2].getElementsByTagName('a')[0].href;
+
+    var readtime3 = document.querySelectorAll('[data-area="block>topic:das_beste_von_spiegel+"]')[0].getElementsByTagName('article')[2].getElementsByTagName('div')[3].getElementsByTagName('span')[3].innerText;
+
+    var imgnoscriptsrc3 = document.querySelectorAll('[data-area="block>topic:das_beste_von_spiegel+"]')[0].getElementsByTagName('article')[2].getElementsByTagName('noscript')[0].innerText;
+    var imgnoscriptid3 = imgnoscriptsrc3.slice(83, 119)
+
+    var tempDiv3 = document.createElement('div');
+    tempDiv3.innerHTML = imgnoscriptsrc3;
+    var titleElement3 = tempDiv3.querySelector('img[title]');
+    var titleContent3 = titleElement3.getAttribute('title');
+
+    var imgsrcsetmobile3 = `https://cdn.prod.www.spiegel.de/assets/image/` + imgnoscriptid3 + `_w640_r0.75.jpg`;
+    var imgsrcmobile3 = imgsrcsetmobile3;
+    var imgsrcset3 = `https://cdn.prod.www.spiegel.de/assets/image/` + imgnoscriptid3 + `_w1240_r1.778.jpg`;
+    var imgsrc3 = imgsrcset3;
+
+} else {
+    var title3 = document.querySelectorAll('[data-area="block>topic:das_beste_von_spiegel+"]')[0].getElementsByTagName('article')[2].getElementsByTagName('header')[0].getElementsByTagName('h2')[0].getElementsByTagName('span')[0].getElementsByTagName('a')[0].getElementsByTagName('span')[0].getElementsByTagName('span')[1].innerText;
+    var subtitle3 = (document.querySelectorAll('[data-area="block>topic:das_beste_von_spiegel+"]')[0].getElementsByTagName('article')[2].getElementsByTagName('header')[0].getElementsByTagName('h2')[0].getElementsByTagName('span')[2].innerText || '').trim();
+    var headline3 = subtitle3 + ": " + title3
+    var url3 = document.querySelectorAll('[data-area="block>topic:das_beste_von_spiegel+"]')[0].getElementsByTagName('article')[2].getElementsByTagName('a')[0].href;
+
+    var readtime3 = document.querySelectorAll('[data-area="block>topic:das_beste_von_spiegel+"]')[0].getElementsByTagName('article')[2].getElementsByTagName('div')[3].getElementsByTagName('span')[3].innerText;
+
+    var imgnoscriptsrc3 = document.querySelectorAll('[data-area="block>topic:das_beste_von_spiegel+"]')[0].getElementsByTagName('article')[2].getElementsByTagName('noscript')[0].innerText;
+    var imgnoscriptid3 = imgnoscriptsrc3.slice(83, 119)
+
+    var tempDiv3 = document.createElement('div');
+    tempDiv3.innerHTML = imgnoscriptsrc3;
+    var titleElement3 = tempDiv3.querySelector('img[title]');
+    var titleContent3 = titleElement3.getAttribute('title');
+
+    var imgsrcsetmobile3 = `https://cdn.prod.www.spiegel.de/assets/image/` + imgnoscriptid3 + `_w640_r0.75.jpg`;
+    var imgsrcmobile3 = imgsrcsetmobile3;
+    var imgsrcset3 = `https://cdn.prod.www.spiegel.de/assets/image/` + imgnoscriptid3 + `_w1240_r1.778.jpg`;
+    var imgsrc3 = imgsrcset3;
+}
+
+
+//Position 4 
+var title4 = document.querySelectorAll('[data-area="block>topic:das_beste_von_spiegel+"]')[0].getElementsByTagName('article')[3].getElementsByTagName('header')[0].getElementsByTagName('span')[4].innerText;
+var subtitle4 = (document.querySelectorAll('[data-area="block>topic:das_beste_von_spiegel+"]')[0].getElementsByTagName('article')[3].getElementsByTagName('header')[0].getElementsByTagName('h2')[0].getElementsByTagName('span')[0].innerText || '').trim();
+var headline4 = subtitle4 + ": " + title4
+var url4 = document.querySelectorAll('[data-area="block>topic:das_beste_von_spiegel+"]')[0].getElementsByTagName('article')[3].getElementsByTagName('a')[0].href;
+var readtime4 = document.querySelectorAll('[data-area="block>topic:das_beste_von_spiegel+"]')[0].getElementsByTagName('article')[3].getElementsByTagName('div')[1].getElementsByTagName('span')[3].innerText;
+
+var imgnoscriptsrc4 = document.querySelectorAll('[data-area="block>topic:das_beste_von_spiegel+"]')[0].getElementsByTagName('article')[3].getElementsByTagName('noscript')[0].innerText;
+var imgnoscriptid4 = imgnoscriptsrc4.slice(83, 119);
+
+var tempDiv4 = document.createElement('div');
+tempDiv4.innerHTML = imgnoscriptsrc4;
+var titleElement4 = tempDiv4.querySelector('img[title]');
+var titleContent4 = titleElement4.getAttribute('title');
+
+var imgsrcsetmobile4 = `https://cdn.prod.www.spiegel.de/assets/image/` + imgnoscriptid4 + `_w640_r0.75.jpg`;
+var imgsrcmobile4 = imgsrcsetmobile4;
+var imgsrcset4 = `https://cdn.prod.www.spiegel.de/assets/image/` + imgnoscriptid4 + `_w1240_r1.778.jpg`;
+var imgsrc4 = imgsrcset4;
+
+} else {
+
+//Abonnent:innen mit querySelectorAll('[data-area="block>topic:das_beste_von_spiegel+"]')[1]
+// if (document.querySelectorAll('[data-area="block>topic:das_beste_von_spiegel+"]')[1] != null) {
+//Position 1
+document.querySelectorAll(`[data-area="block>topic:das_beste_von_spiegel+"]`)[0].style.display = "none";
+document.querySelectorAll(`[data-area="block>topic:das_beste_von_spiegel+"]`)[1].style.display = "none";
+
+if (document.querySelectorAll('[data-area="block>topic:das_beste_von_spiegel+"]')[1].getElementsByTagName('article')[0].getAttribute('data-target-teaser') == 'xxl-opinion') {
+    var title1 = document.querySelectorAll('[data-area="block>topic:das_beste_von_spiegel+"]')[1].getElementsByTagName('article')[0].getElementsByTagName('header')[0].getElementsByTagName('span')[6].innerText;
+    var url1 = document.querySelectorAll('[data-area="block>topic:das_beste_von_spiegel+"]')[1].getElementsByTagName('article')[0].getElementsByTagName('a')[0].href;
+    var readtime1 = document.querySelectorAll('[data-area="block>topic:das_beste_von_spiegel+"]')[1].getElementsByTagName('article')[0].getElementsByTagName('div')[4].getElementsByTagName('span')[3].innerText;
+
+    var imgnoscriptsrc1 = document.querySelectorAll('[data-area="block>topic:das_beste_von_spiegel+"]')[1].getElementsByTagName('article')[0].getElementsByTagName('noscript')[1].innerText;
+    var imgnoscriptid1 = imgnoscriptsrc1.slice(103, 139)
+
+    var tempDiv1 = document.createElement('div');
+    tempDiv1.innerHTML = imgnoscriptsrc1;
+    var titleElement1 = tempDiv1.querySelector('img[title]');
+    var titleContent1 = titleElement1.getAttribute('title');
+
+    var imgsrcsetmobile1 = `https://cdn.prod.www.spiegel.de/assets/image/` + imgnoscriptid1 + `_w640_r0.75.jpg`;
+    var imgsrcmobile1 = imgsrcsetmobile1;
+    var imgsrcset1 = `https://cdn.prod.www.spiegel.de/assets/image/` + imgnoscriptid1 + `_w1240_r1.778.jpg`;
+    var imgsrc1 = imgsrcset1;
+
+
+} else {
+    var title1 = document.querySelectorAll('[data-area="block>topic:das_beste_von_spiegel+"]')[1].getElementsByTagName('article')[0].getElementsByTagName('header')[0].getElementsByTagName('span')[4].innerText;
+    //var subtitle1 = 
+    var url1 = document.querySelectorAll('[data-area="block>topic:das_beste_von_spiegel+"]')[1].getElementsByTagName('article')[0].getElementsByTagName('a')[0].href;
+    var readtime1 = document.querySelectorAll('[data-area="block>topic:das_beste_von_spiegel+"]')[1].getElementsByTagName('article')[0].getElementsByTagName('div')[3].getElementsByTagName('span')[3].innerText;
+
+    var imgnoscriptsrc1 = document.querySelectorAll('[data-area="block>topic:das_beste_von_spiegel+"]')[1].getElementsByTagName('article')[0].getElementsByTagName('noscript')[0].innerText;
+    var imgnoscriptid1 = imgnoscriptsrc1.slice(103, 139)
+
+    var tempDiv1 = document.createElement('div');
+    tempDiv1.innerHTML = imgnoscriptsrc1;
+    var titleElement1 = tempDiv1.querySelector('img[title]');
+    var titleContent1 = titleElement1.getAttribute('title');
+
+    var imgsrcsetmobile1 = `https://cdn.prod.www.spiegel.de/assets/image/` + imgnoscriptid1 + `_w640_r0.75.jpg`;
+    var imgsrcmobile1 = imgsrcsetmobile1;
+    var imgsrcset1 = `https://cdn.prod.www.spiegel.de/assets/image/` + imgnoscriptid1 + `_w1240_r1.778.jpg`;
+    var imgsrc1 = imgsrcset1;
+
+}
+
+//Position 2
+if (document.querySelectorAll('[data-area="block>topic:das_beste_von_spiegel+"]')[1].getElementsByTagName('article')[1].getAttribute('data-target-teaser') == 'm-opinion') {
+    var title2 = document.querySelectorAll('[data-area="block>topic:das_beste_von_spiegel+"]')[1].getElementsByTagName('article')[1].getElementsByTagName('span')[6].innerText;
+    var subtitle2 = (document.querySelectorAll('[data-area="block>topic:das_beste_von_spiegel+"]')[1].getElementsByTagName('article')[1].getElementsByTagName('header')[0].getElementsByTagName('h2')[0].getElementsByTagName('span')[2].innerText || '').trim(); //ggf hier nochmal checken wenn meinung
+    var headline2 = subtitle2 + ": " + title2
+    var url2 = document.querySelectorAll('[data-area="block>topic:das_beste_von_spiegel+"]')[1].getElementsByTagName('article')[1].getElementsByTagName('a')[0].href;
+
+    var readtime2 = document.querySelectorAll('[data-area="block>topic:das_beste_von_spiegel+"]')[1].getElementsByTagName('article')[1].getElementsByTagName('div')[3].getElementsByTagName('span')[3].innerText;
+
+    var imgnoscriptsrc2 = document.querySelectorAll('[data-area="block>topic:das_beste_von_spiegel+"]')[1].getElementsByTagName('article')[1].getElementsByTagName('noscript')[0].innerText;
+    var imgnoscriptid2 = imgnoscriptsrc2.slice(83, 119)
+
+    var tempDiv2 = document.createElement('div');
+    tempDiv2.innerHTML = imgnoscriptsrc2;
+    var titleElement2 = tempDiv2.querySelector('img[title]');
+    var titleContent2 = titleElement2.getAttribute('title');
+
+    var imgsrcsetmobile2 = `https://cdn.prod.www.spiegel.de/assets/image/` + imgnoscriptid2 + `_w640_r0.75.jpg`;
+    var imgsrcmobile2 = imgsrcsetmobile2;
+    var imgsrcset2 = `https://cdn.prod.www.spiegel.de/assets/image/` + imgnoscriptid2 + `_w1240_r1.778.jpg`;
+    var imgsrc2 = imgsrcset2;
+
+} else {
+    var title2 = document.querySelectorAll('[data-area="block>topic:das_beste_von_spiegel+"]')[1].getElementsByTagName('article')[1].getElementsByTagName('header')[0].getElementsByTagName('h2')[0].getElementsByTagName('span')[0].getElementsByTagName('a')[0].getElementsByTagName('span')[0].getElementsByTagName('span')[1].innerText;
+    var subtitle2 = (document.querySelectorAll('[data-area="block>topic:das_beste_von_spiegel+"]')[1].getElementsByTagName('article')[1].getElementsByTagName('header')[0].getElementsByTagName('h2')[0].getElementsByTagName('span')[2].innerText || '').trim();
+    var headline2 = subtitle2 + ": " + title2
+    var url2 = document.querySelectorAll('[data-area="block>topic:das_beste_von_spiegel+"]')[1].getElementsByTagName('article')[1].getElementsByTagName('a')[0].href;
+
+    var readtime2 = document.querySelectorAll('[data-area="block>topic:das_beste_von_spiegel+"]')[1].getElementsByTagName('article')[1].getElementsByTagName('div')[3].getElementsByTagName('span')[3].innerText;
+
+    var imgnoscriptsrc2 = document.querySelectorAll('[data-area="block>topic:das_beste_von_spiegel+"]')[1].getElementsByTagName('article')[1].getElementsByTagName('noscript')[0].innerText;
+    var imgnoscriptid2 = imgnoscriptsrc2.slice(83, 119)
+
+    var tempDiv2 = document.createElement('div');
+    tempDiv2.innerHTML = imgnoscriptsrc2;
+    var titleElement2 = tempDiv2.querySelector('img[title]');
+    var titleContent2 = titleElement2.getAttribute('title');
+
+    var imgsrcsetmobile2 = `https://cdn.prod.www.spiegel.de/assets/image/` + imgnoscriptid2 + `_w640_r0.75.jpg`;
+    var imgsrcmobile2 = imgsrcsetmobile2;
+    var imgsrcset2 = `https://cdn.prod.www.spiegel.de/assets/image/` + imgnoscriptid2 + `_w1240_r1.778.jpg`;
+    var imgsrc2 = imgsrcset2;
+}
+
+//Position 3
+
+if (document.querySelectorAll('[data-area="block>topic:das_beste_von_spiegel+"]')[1].getElementsByTagName('article')[2].getAttribute('data-target-teaser') == 'm-opinion') {
+    var title3 = document.querySelectorAll('[data-area="block>topic:das_beste_von_spiegel+"]')[1].getElementsByTagName('article')[2].getElementsByTagName('header')[0].getElementsByTagName('h2')[0].getElementsByTagName('span')[0].getElementsByTagName('a')[0].getElementsByTagName('span')[0].getElementsByTagName('span')[1].innerText;
+    var subtitle3 = (document.querySelectorAll('[data-area="block>topic:das_beste_von_spiegel+"]')[1].getElementsByTagName('article')[2].getElementsByTagName('header')[0].getElementsByTagName('h2')[0].getElementsByTagName('span')[2].innerText || '').trim();
+    var headline3 = subtitle3 + ": " + title3
+    var url3 = document.querySelectorAll('[data-area="block>topic:das_beste_von_spiegel+"]')[1].getElementsByTagName('article')[2].getElementsByTagName('a')[0].href;
+
+    var readtime3 = document.querySelectorAll('[data-area="block>topic:das_beste_von_spiegel+"]')[1].getElementsByTagName('article')[2].getElementsByTagName('div')[3].getElementsByTagName('span')[3].innerText;
+
+    var imgnoscriptsrc3 = document.querySelectorAll('[data-area="block>topic:das_beste_von_spiegel+"]')[1].getElementsByTagName('article')[2].getElementsByTagName('noscript')[0].innerText;
+    var imgnoscriptid3 = imgnoscriptsrc3.slice(83, 119)
+
+    var tempDiv3 = document.createElement('div');
+    tempDiv3.innerHTML = imgnoscriptsrc3;
+    var titleElement3 = tempDiv3.querySelector('img[title]');
+    var titleContent3 = titleElement3.getAttribute('title');
+
+    var imgsrcsetmobile3 = `https://cdn.prod.www.spiegel.de/assets/image/` + imgnoscriptid3 + `_w640_r0.75.jpg`;
+    var imgsrcmobile3 = imgsrcsetmobile3;
+    var imgsrcset3 = `https://cdn.prod.www.spiegel.de/assets/image/` + imgnoscriptid3 + `_w1240_r1.778.jpg`;
+    var imgsrc3 = imgsrcset3;
+
+} else {
+    var title3 = document.querySelectorAll('[data-area="block>topic:das_beste_von_spiegel+"]')[1].getElementsByTagName('article')[2].getElementsByTagName('header')[0].getElementsByTagName('h2')[0].getElementsByTagName('span')[0].getElementsByTagName('a')[0].getElementsByTagName('span')[0].getElementsByTagName('span')[1].innerText;
+    var subtitle3 = (document.querySelectorAll('[data-area="block>topic:das_beste_von_spiegel+"]')[1].getElementsByTagName('article')[2].getElementsByTagName('header')[0].getElementsByTagName('h2')[0].getElementsByTagName('span')[2].innerText || '').trim();
+    var headline3 = subtitle3 + ": " + title3
+    var url3 = document.querySelectorAll('[data-area="block>topic:das_beste_von_spiegel+"]')[1].getElementsByTagName('article')[2].getElementsByTagName('a')[0].href;
+
+    var readtime3 = document.querySelectorAll('[data-area="block>topic:das_beste_von_spiegel+"]')[1].getElementsByTagName('article')[2].getElementsByTagName('div')[3].getElementsByTagName('span')[3].innerText;
+
+    var imgnoscriptsrc3 = document.querySelectorAll('[data-area="block>topic:das_beste_von_spiegel+"]')[1].getElementsByTagName('article')[2].getElementsByTagName('noscript')[0].innerText;
+    var imgnoscriptid3 = imgnoscriptsrc3.slice(83, 119)
+
+    var tempDiv3 = document.createElement('div');
+    tempDiv3.innerHTML = imgnoscriptsrc3;
+    var titleElement3 = tempDiv3.querySelector('img[title]');
+    var titleContent3 = titleElement3.getAttribute('title');
+
+    var imgsrcsetmobile3 = `https://cdn.prod.www.spiegel.de/assets/image/` + imgnoscriptid3 + `_w640_r0.75.jpg`;
+    var imgsrcmobile3 = imgsrcsetmobile3;
+    var imgsrcset3 = `https://cdn.prod.www.spiegel.de/assets/image/` + imgnoscriptid3 + `_w1240_r1.778.jpg`;
+    var imgsrc3 = imgsrcset3;
+}
+
+
+//Position 4 
+var title4 = document.querySelectorAll('[data-area="block>topic:das_beste_von_spiegel+"]')[1].getElementsByTagName('article')[3].getElementsByTagName('header')[0].getElementsByTagName('span')[4].innerText;
+var subtitle4 = (document.querySelectorAll('[data-area="block>topic:das_beste_von_spiegel+"]')[1].getElementsByTagName('article')[3].getElementsByTagName('header')[0].getElementsByTagName('span')[0].innerText || '').trim();
+var headline4 = subtitle4 + ": " + title4
+var url4 = document.querySelectorAll('[data-area="block>topic:das_beste_von_spiegel+"]')[1].getElementsByTagName('article')[3].getElementsByTagName('a')[0].href;
+
+var readtime4 = document.querySelectorAll('[data-area="block>topic:das_beste_von_spiegel+"]')[1].getElementsByTagName('article')[3].getElementsByTagName('div')[1].getElementsByTagName('span')[3].innerText;
+
+var imgnoscriptsrc4 = document.querySelectorAll('[data-area="block>topic:das_beste_von_spiegel+"]')[1].getElementsByTagName('article')[3].getElementsByTagName('noscript')[0].innerText;
+var imgnoscriptid4 = imgnoscriptsrc4.slice(83, 119)
+
+var tempDiv4 = document.createElement('div');
+tempDiv4.innerHTML = imgnoscriptsrc4;
+var titleElement4 = tempDiv4.querySelector('img[title]');
+var titleContent4 = titleElement4.getAttribute('title');
+
+var imgsrcsetmobile4 = `https://cdn.prod.www.spiegel.de/assets/image/` + imgnoscriptid4 + `_w640_r0.75.jpg`;
+var imgsrcmobile4 = imgsrcsetmobile4;
+var imgsrcset4 = `https://cdn.prod.www.spiegel.de/assets/image/` + imgnoscriptid4 + `_w1240_r1.778.jpg`;
+var imgsrc4 = imgsrcset4;
+
+
+};
+
+var content = `<section class="relative flex flex-wrap lg:w-8/12 md:w-full sm:w-full" data-size="8-12" data-area="block>plus-slider" data-teaser-count="4" data-sara-component=
+    '{
+    "name":"plusbox-slider",
+    "type":"engagement",
+    "title":"Target PlusBox - Slider"
+    }'>
+    <div
+        class="z-10 absolute bottom-0 left-0 right-0 rounded top-0 lg:bg-white lg:dark:bg-dm-shade-darkest md:bg-white md:dark:bg-dm-shade-darkest sm:bg-white sm:dark:bg-dm-shade-darkest lg:shadow md:shadow sm:shadow">
+    </div>
+    <div class="z-20 w-full sm:pb-16 sm:sticky bg-white dark:bg-dm-shade-darkest" style="top: var(--polygon-headerbar-height, 0px);" data-block-el="title">
+    <div class="lg:flex md:flex sm:flex lg:justify-between md:justify-between sm:flex-col lg:pt-24 md:pt-24 sm:pt-16 lg:px-24 md:px-24" data-area="title-cluster">
+    <h2 class="lg:mr-24 md:mr-24 sm:mx-16 lg:w-full md:w-full">
+    <a href="https://www.spiegel.de/plus/" class="text-black dark:text-shade-lightest flex" target="_self" title="Das Beste von SPIEGEL+">
+    <span class="flex lg:justify-start md:justify-start sm:justify-between text-primary-base dark:text-dm-primary-base hover:text-primary-dark focus:text-primary-darker font-brandUI font-extrabold text-xl leading-tight sm:w-full">
+    <span>Das Beste von SPIEGEL+
+    <span class="ml-4 sm:hidden"><svg width="12" height="12"><use xlink:href="#spon-chevron-right-f-s"></use></svg>
+    </span>
+    </span>
+    <span class="ml-4 lg:hidden md:hidden"><svg width="12" height="12"><use xlink:href="#spon-chevron-right-f-s"></use></svg>
+    </span>
+    </span>
+    </a>
+    </h2>
+    <div class="polygon-swiper relative whitespace-nowrap sm:px-16 select-none font-sans">
+    <ul class="polygon-swiper-wrapper flex items-center font-sansUI">
+    <li class="polygon-swiper-slide sm:hidden">
+    <a href="https://www.spiegel.de/plus/" class="text-black dark:text-shade-lightest" target="_self" title="Das Beste von SPIEGEL+">
+    <span class="shrink-0 border-b border-shade-light text-black dark:text-shade-lightest hover:border-black dark:hover:border-white focus:border-transparent font-sansUI font-normal text-s self-start">
+    alle Beiträge
+    </span>
+    </a>
+    </li>
+    </ul>
+    </div>
+    </div>
+    </div>
+    <div class="polygon-swiper relative overflow-hidden z-10 lg:m-24 md:m-24 sm:my-16 entered polygon-swiper-initialized polygon-swiper-horizontal polygon-swiper-pointer-events polygon-swiper-backface-hidden"
+        x-data="" x-swiper="{roundLengths: true,slidesPerView: 1,watchOverflow: false,}" x-lazyload=""
+        data-ll-status="entered">
+        <div
+            class="polygon-swiper-button-prev hidden flex items-center absolute bottom-0 left-0 top-0 z-10 select-none ml-32">
+            <span
+                class="md:hidden sm:hidden bg-white flex items-center justify-around bg-white dark:bg-dm-shade-darkest text-black dark:text-shade-lightest border border-shade-base dark:border-shade-light hover:border-black dark:hover:border-white focus:bg-shade-lightest dark:focus:bg-black focus:border-black dark:focus:border-white rounded-circle cursor-pointer flex my-auto p-12"><svg
+                    id="spon-chevron-left-l" class="stroke-current" width="24" height="24" viewBox="0 0 24 24"
+                    fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+                    <g id="l-chevron-left-ac3bb735-1d00-4cb5-abdf-8f26e10160b1">
+                        <g id="l-chevron-right-ac3bb735-1d00-4cb5-abdf-8f26e10160b1">
+                            <path id="vector-ac3bb735-1d00-4cb5-abdf-8f26e10160b1" d="M15 6l-6 6 6 6"
+                                stroke-width="1.3" stroke-linecap="round"></path>
+                        </g>
+                    </g>
+                </svg>
+            </span>
+        </div>
+        <div
+            class="polygon-swiper-button-next flex items-center absolute bottom-0 right-0 top-0 z-10 select-none mr-32">
+            <span
+                class="md:hidden sm:hidden bg-white flex items-center justify-around bg-white dark:bg-dm-shade-darkest text-black dark:text-shade-lightest border border-shade-base dark:border-shade-light hover:border-black dark:hover:border-white focus:bg-shade-lightest dark:focus:bg-black focus:border-black dark:focus:border-white rounded-circle cursor-pointer flex my-auto p-12"><svg
+                    id="spon-chevron-right-l" class="stroke-current" width="24" height="24" viewBox="0 0 24 24"
+                    fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+                    <g id="l-chevron-right-3165e035-b90e-462d-a6fd-c88b912b084d">
+                        <path id="vector-3165e035-b90e-462d-a6fd-c88b912b084d" d="M9 6l6 6-6 6" stroke-width="1.3"
+                            stroke-linecap="round"></path>
+                    </g>
+                </svg>
+            </span>
+        </div>
+        <div class="polygon-swiper-wrapper flex flex-nowrap" style="transform: translate3d(0px, 0px, 0px);">
+            <div data-pos="slider:1st" class="polygon-swiper-slide shrink-0 w-full polygon-swiper-slide-active" style="width: 948px;">
+                <a href="`+ url1 + `" class="relative block overflow-hidden rounded-pill" title="Die Zombie-App">
+                    <figure>
+                    <div class="relative bg-transparent">
+                        <picture>
+                            <img data-image-el="img" class="lazyload rounded sm:hidden entered loaded"
+                            src="`+ imgsrcset1 + `" 
+                            width="948" height="533" 
+                            title="`+ titleContent1 + `" 
+                            alt="`+ titleContent1 + `">
+                        </picture>
+                    </div>
+                    <div class="relative bg-transparent">
+                        <picture>
+                                <source
+                                    data-srcset="`+ imgsrcsetmobile1 + `"
+                                    data-sizes="(max-width: 519px) 100vw, (min-width: 520px) and (max-width: 719px) 520px, (min-width: 720px) and (max-width: 919px) 100vw, (min-width: 920px) and (max-width: 1011px) 920px, (min-width: 1012px) 996px">
+                                <img data-image-el="img" class="rounded md:hidden lg:hidden"
+                                    src="`+ imgsrcsetmobile1 + `"
+                                    data-src="`+ imgsrcmobile1 + `"
+                                    width="520" height="693"
+                                    title="`+ titleContent1 + `">
+                            </picture>
+                        <noscript>
+                            <img class="absolute inset-0 rounded md:hidden lg:hidden"
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" 
+                            sizes="(max-width: 519px) 100vw, (min-width: 520px) and (max-width: 719px) 520px, (min-width: 720px) and (max-width: 919px) 100vw, (min-width: 920px) and (max-width: 1011px) 920px, (min-width: 1012px) 996px"
+                            width="520" height="693"
+                            title="`+ titleContent1 + `" 
+                            alt="`+ title1 + `" onload="if(this.src.indexOf('data:image/png;base64') === 0) this.src=window.navigator.webBridge.getTeaserImageSrc('` + imgnoscriptid1 + `')" onerror="this.classList.add('hidden')">
+                        </noscript>
+                    </div>
+                    </figure>
+                    <div
+                        class="absolute bottom-0 inset-x-0 flex flex-col justify-end text-center pointer-events-none">
+                        <div
+                            class="flex flex-col justify-end bg-storefront sm:min-h-300 sm:px-16 z-10">
+                            <h2
+                                class="text-shadow lg:w-8/12 md:w-8/12 mx-auto font-brandUI font-extrabold text-white dark:text-shade-lightest lg:text-3xl md:text-3xl sm:text-3xl leading-tight mb-8">
+                                <span class="inline-flex align-middle leading-none mr-4 mb-2 text-primary-base dark:text-dm-primary-base">
+                                    <svg class="fill-current" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+                                        <rect width="20" height="20" rx="1.5" class="text-primary-base dark:text-dm-primary-base fill-current"></rect>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4 10.684V6.295C4 5.575 4.36 5 5.295 5h3.669c.648 0 1.08.432 1.08 1.151v1.943H8.172v-1.44H5.799v2.303h4.244v4.82c0 .791-.431 1.223-1.295 1.223H5.223C4.36 15 4 14.496 4 13.849v-2.302h1.87v1.798h2.375v-2.662H4z" fill="#fff"></path>
+                                        <path d="M13.825 7.8h1.35v2.025H17.2v1.35h-2.025V13.2h-1.35v-2.025H11.8v-1.35h2.025V7.8z" fill="#fff"></path>
+                                    </svg>
+                                </span>
+                                `+ title1 + `
+                            </h2>
+                            <div class="mb-72 md:mb-72 sm:mb-80">
+                                <span>
+                                    <span
+                                        class="flex justify-center text-shade-light lg:text-base md:text-base sm:text-s flex flex-wrap items-end leading-loose font-sansUI font-normal text-s text-shade-dark dark:text-shade-light"
+                                        data-contains-auxiliary-icons="Text">
+                                        <span data-icon-auxiliary="Text">
+                                            <span class="inline-flex align-middle mr-6"><svg width="16" height="16"><use xlink:href="#spon-text-m"></use></svg>
+                                            </span>
+                                            <span>`+ readtime1 + `</span>
+                                        </span>
+                                    </span>
+                                </span>
+                                <div class="absolute bottom-0 w-full bg-black h-4"></div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div data-pos="slider:2nd" class="polygon-swiper-slide shrink-0 w-full polygon-swiper-button-next" style="width: 948px;">
+                <a href="`+ url2 + `"
+                    class="relative block overflow-hidden rounded-pill"
+                    title="`+ title2 + `">
+                    <figure>
+                        <div class="relative bg-transparent">
+                            <picture>
+                                <img data-image-el="img" class="lazyload rounded sm:hidden entered loaded"
+                                src="`+ imgsrcset2 + `" 
+                                width="948" height="533" 
+                                title="`+ titleContent2 + `" 
+                                alt="`+ titleContent2 + `">
+                            </picture>
+                        </div>
+                        <div class="relative bg-transparent">
+                            <picture>
+                                <source
+                                    data-srcset="`+ imgsrcsetmobile2 + `"
+                                    data-sizes="(max-width: 519px) 100vw, (min-width: 520px) and (max-width: 719px) 520px, (min-width: 720px) and (max-width: 919px) 100vw, (min-width: 920px) and (max-width: 1011px) 920px, (min-width: 1012px) 996px">
+                                <img data-image-el="img" class="rounded md:hidden lg:hidden"
+                                    src="`+ imgsrcsetmobile2 + `"
+                                    data-src="`+ imgsrcmobile2 + `"
+                                    width="520" height="693"
+                                    title="`+ titleContent2 + `">
+                            </picture>
+                            <noscript>
+                                <img class="absolute inset-0 rounded md:hidden lg:hidden"
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" 
+                                sizes="(max-width: 519px) 100vw, (min-width: 520px) and (max-width: 719px) 520px, (min-width: 720px) and (max-width: 919px) 100vw, (min-width: 920px) and (max-width: 1011px) 920px, (min-width: 1012px) 996px"
+                                width="520" height="693"
+                                title="`+ titleContent2 + `" 
+                                alt="`+ title2 + `" onload="if(this.src.indexOf('data:image/png;base64') === 0) this.src=window.navigator.webBridge.getTeaserImageSrc('` + imgnoscriptid2 + `')" onerror="this.classList.add('hidden')">
+                            </noscript>
+                        </div>
+                    </figure>
+                    <div
+                        class="absolute bottom-0 inset-x-0 flex flex-col justify-end text-center pointer-events-none">
+                        <div
+                            class="flex flex-col justify-end bg-storefront sm:min-h-300 sm:px-16 z-10">
+                            <h2
+                                class="text-shadow lg:w-8/12 md:w-8/12 mx-auto font-brandUI font-extrabold text-white dark:text-shade-lightest lg:text-3xl md:text-3xl sm:text-3xl leading-tight mb-8">
+                                <span class="inline-flex align-middle leading-none mr-4 mb-2 text-primary-base dark:text-dm-primary-base">
+                                    <svg class="fill-current" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+                                        <rect width="20" height="20" rx="1.5" class="text-primary-base dark:text-dm-primary-base fill-current"></rect>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4 10.684V6.295C4 5.575 4.36 5 5.295 5h3.669c.648 0 1.08.432 1.08 1.151v1.943H8.172v-1.44H5.799v2.303h4.244v4.82c0 .791-.431 1.223-1.295 1.223H5.223C4.36 15 4 14.496 4 13.849v-2.302h1.87v1.798h2.375v-2.662H4z" fill="#fff"></path>
+                                        <path d="M13.825 7.8h1.35v2.025H17.2v1.35h-2.025V13.2h-1.35v-2.025H11.8v-1.35h2.025V7.8z" fill="#fff"></path>
+                                    </svg>
+                                </span>
+                                `+ headline2 + `
+                            </h2>
+                            <div class="mb-72 md:mb-72 sm:mb-80">
+                                <span>
+                                    <span
+                                        class="flex justify-center text-shade-light lg:text-base md:text-base sm:text-s flex flex-wrap items-end leading-loose font-sansUI font-normal text-s text-shade-dark dark:text-shade-light"
+                                        data-contains-auxiliary-icons="Text">
+                                        <span data-icon-auxiliary="Text">
+                                            <span class="inline-flex align-middle mr-6"><svg width="16" height="16"><use xlink:href="#spon-text-m"></use></svg>
+                                            </span>
+                                            <span>`+ readtime2 + `</span>
+                                        </span>
+                                    </span>
+                                </span>
+                                <div class="absolute bottom-0 w-full bg-black h-4"></div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div data-pos="slider:3rd" class="polygon-swiper-slide shrink-0 w-full polygon-swiper-button-next" style="width: 948px;">
+                <a href="`+ url3 + `"
+                    class="relative block overflow-hidden rounded-pill"
+                    title="`+ title3 + `">
+                    <figure>
+                    <div class="relative bg-transparent">
+                    <picture>
+                        <img data-image-el="img" class="lazyload rounded sm:hidden entered loaded"
+                        src="`+ imgsrcset3 + `" 
+                        width="948" height="533" 
+                        title="`+ titleContent3 + `" 
+                        alt="`+ titleContent3 + `">
+                    </picture>
+                </div>
+                <div class="relative bg-transparent">
+                    <picture>
+                        <source
+                            data-srcset="`+ imgsrcsetmobile3 + `"
+                            data-sizes="(max-width: 519px) 100vw, (min-width: 520px) and (max-width: 719px) 520px, (min-width: 720px) and (max-width: 919px) 100vw, (min-width: 920px) and (max-width: 1011px) 920px, (min-width: 1012px) 996px">
+                        <img data-image-el="img" class="rounded md:hidden lg:hidden"
+                            src="`+ imgsrcsetmobile3 + `"
+                            data-src="`+ imgsrcmobile3 + `"
+                            width="520" height="693"
+                            title="`+ titleContent3 + `">
+                    </picture>
+                    <noscript>
+                        <img class="absolute inset-0 rounded md:hidden lg:hidden"
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" 
+                        sizes="(max-width: 519px) 100vw, (min-width: 520px) and (max-width: 719px) 520px, (min-width: 720px) and (max-width: 919px) 100vw, (min-width: 920px) and (max-width: 1011px) 920px, (min-width: 1012px) 996px"
+                        width="520" height="693"
+                        title="`+ titleContent3 + `" 
+                        alt="`+ title3 + `" onload="if(this.src.indexOf('data:image/png;base64') === 0) this.src=window.navigator.webBridge.getTeaserImageSrc('` + imgnoscriptid3 + `')" onerror="this.classList.add('hidden')">
+                    </noscript>
+                </div>
+                    </figure>
+                    <div
+                        class="absolute bottom-0 inset-x-0 flex flex-col justify-end text-center pointer-events-none">
+                        <div
+                            class="flex flex-col justify-end bg-storefront sm:min-h-300 sm:px-16 z-10">
+                            <h2
+                                class="text-shadow lg:w-8/12 md:w-8/12 mx-auto font-brandUI font-extrabold text-white dark:text-shade-lightest lg:text-3xl md:text-3xl sm:text-3xl leading-tight mb-8">
+                                <span class="inline-flex align-middle leading-none mr-4 mb-2 text-primary-base dark:text-dm-primary-base">
+                                    <svg class="fill-current" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+                                        <rect width="20" height="20" rx="1.5" class="text-primary-base dark:text-dm-primary-base fill-current"></rect>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4 10.684V6.295C4 5.575 4.36 5 5.295 5h3.669c.648 0 1.08.432 1.08 1.151v1.943H8.172v-1.44H5.799v2.303h4.244v4.82c0 .791-.431 1.223-1.295 1.223H5.223C4.36 15 4 14.496 4 13.849v-2.302h1.87v1.798h2.375v-2.662H4z" fill="#fff"></path>
+                                        <path d="M13.825 7.8h1.35v2.025H17.2v1.35h-2.025V13.2h-1.35v-2.025H11.8v-1.35h2.025V7.8z" fill="#fff"></path>
+                                    </svg>
+                                </span>
+                                `+ headline3 + `
+                            </h2>
+                            <div class="mb-72 md:mb-72 sm:mb-80">
+                                <span>
+                                    <span
+                                        class="flex justify-center text-shade-light lg:text-base md:text-base sm:text-s flex flex-wrap items-end leading-loose font-sansUI font-normal text-s text-shade-dark dark:text-shade-light"
+                                        data-contains-auxiliary-icons="Text">
+                                        <span data-icon-auxiliary="Text">
+                                            <span class="inline-flex align-middle mr-6"><svg width="16" height="16"><use xlink:href="#spon-text-m"></use></svg>
+                                            </span>
+                                            <span>`+ readtime3 + `</span>
+                                        </span>
+                                    </span>
+                                </span>
+                                <div class="absolute bottom-0 w-full bg-black h-4"></div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div data-pos="slider:4th" class="polygon-swiper-slide shrink-0 w-full polygon-swiper-button-next" style="width: 948px;">
+                <a href="`+ url4 + `"
+                    class="relative block overflow-hidden rounded-pill"
+                    title="`+ title4 + `">
+                    <figure>
+                        <div class="relative bg-transparent">
+                            <picture>
+                                <img data-image-el="img" class="lazyload rounded sm:hidden entered loaded"
+                                src="`+ imgsrcset4 + `" 
+                                width="948" height="533" 
+                                title="`+ titleContent4 + `" 
+                                alt="`+ titleContent4 + `">
+                            </picture>
+                        </div>
+                        <div class="relative bg-transparent">
+                            <picture>
+                                <source
+                                    data-srcset="`+ imgsrcsetmobile4 + `"
+                                    data-sizes="(max-width: 519px) 100vw, (min-width: 520px) and (max-width: 719px) 520px, (min-width: 720px) and (max-width: 919px) 100vw, (min-width: 920px) and (max-width: 1011px) 920px, (min-width: 1012px) 996px">
+                                <img data-image-el="img" class="rounded md:hidden lg:hidden"
+                                    src="`+ imgsrcsetmobile4 + `"
+                                    data-src="`+ imgsrcmobile4 + `"
+                                    width="520" height="693"
+                                    title="`+ titleContent4 + `">
+                            </picture>
+                            <noscript>
+                                <img class="absolute inset-0 rounded md:hidden lg:hidden"
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" 
+                                sizes="(max-width: 519px) 100vw, (min-width: 520px) and (max-width: 719px) 520px, (min-width: 720px) and (max-width: 919px) 100vw, (min-width: 920px) and (max-width: 1011px) 920px, (min-width: 1012px) 996px"
+                                width="520" height="693"
+                                title="`+ titleContent4 + `" 
+                                alt="`+ title4 + `" onload="if(this.src.indexOf('data:image/png;base64') === 0) this.src=window.navigator.webBridge.getTeaserImageSrc('` + imgnoscriptid4 + `')" onerror="this.classList.add('hidden')">
+                            </noscript>
+                        </div>
+                    </figure>
+                    <div
+                        class="absolute bottom-0 inset-x-0 flex flex-col justify-end text-center pointer-events-none">
+                        <div
+                            class="flex flex-col justify-end bg-storefront sm:min-h-300 sm:px-16 z-10">
+                            <h2
+                                class="text-shadow lg:w-8/12 md:w-8/12 mx-auto font-brandUI font-extrabold text-white dark:text-shade-lightest lg:text-3xl md:text-3xl sm:text-3xl leading-tight mb-8">
+                                <span class="inline-flex align-middle leading-none mr-4 mb-2 text-primary-base dark:text-dm-primary-base">
+                                    <svg class="fill-current" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+                                        <rect width="20" height="20" rx="1.5" class="text-primary-base dark:text-dm-primary-base fill-current"></rect>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4 10.684V6.295C4 5.575 4.36 5 5.295 5h3.669c.648 0 1.08.432 1.08 1.151v1.943H8.172v-1.44H5.799v2.303h4.244v4.82c0 .791-.431 1.223-1.295 1.223H5.223C4.36 15 4 14.496 4 13.849v-2.302h1.87v1.798h2.375v-2.662H4z" fill="#fff"></path>
+                                        <path d="M13.825 7.8h1.35v2.025H17.2v1.35h-2.025V13.2h-1.35v-2.025H11.8v-1.35h2.025V7.8z" fill="#fff"></path>
+                                    </svg>
+                                </span>
+                                `+ headline4 + `
+                            </h2>
+                            <div class="mb-72 md:mb-72 sm:mb-80">
+                                <span>
+                                    <span
+                                        class="flex justify-center text-shade-light lg:text-base md:text-base sm:text-s flex flex-wrap items-end leading-loose font-sansUI font-normal text-s text-shade-dark dark:text-shade-light"
+                                        data-contains-auxiliary-icons="Text">
+                                        <span data-icon-auxiliary="Text">
+                                            <span class="inline-flex align-middle mr-6"><svg width="16" height="16"><use xlink:href="#spon-text-m"></use></svg>
+                                            </span>
+                                            <span>`+ readtime4 + `</span>
+                                        </span>
+                                    </span>
+                                </span>
+                                <div class="absolute bottom-0 w-full bg-black h-4"></div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="flex justify-center">
+            <div
+                class="polygon-swiper-pagination flex flex-row absolute text-black z-10 lg:bottom-48 md:bottom-32 sm:bottom-32 polygon-swiper-pagination-bulvars polygon-swiper-pagination-horizontal">
+                <span
+                    class="rounded-circle w-8 h-8 bg-white opacity-moderate mr-6 polygon-swiper-pagination-bulvar-active [&amp;.polygon-swiper-pagination-bulvar-active]:opacity-full"></span><span
+                    class="rounded-circle w-8 h-8 bg-white opacity-moderate mr-6"></span><span
+                    class="rounded-circle w-8 h-8 bg-white opacity-moderate mr-6"></span><span
+                    class="rounded-circle w-8 h-8 bg-white opacity-moderate mr-6"></span><span
+                    class="rounded-circle w-8 h-8 bg-white opacity-moderate mr-6"></span><span
+                    class="rounded-circle w-8 h-8 bg-white opacity-moderate mr-6"></span><span
+                    class="rounded-circle w-8 h-8 bg-white opacity-moderate mr-6"></span></div>
+        </div>
+    </div>
+    </section>`;
+
+
+if ((document.querySelector('.article-recommendation-wrapper') === null)) {
+    document.querySelectorAll('[data-area="block>topic:das_beste_von_spiegel+"]')[0].insertAdjacentHTML("beforebegin", content);
+   }
+
+
+
+}
+
+  
+
+
+</script>
